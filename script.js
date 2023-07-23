@@ -9,9 +9,10 @@ function decimalToBinary(number) {
         str+=rem;
         number=Math.floor(number/2);
     }
-      console.log(str);
-   
-	return str;
+       const spl=str.split("");
+    const rev=spl.reverse();
+    const answer=rev.join('');
+	return answer;
 }
 
 window.decimalToBinary = decimalToBinary;
